@@ -5,7 +5,7 @@ from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
 
 
-PAYMENT_VARIANTS = {
+PAYMENT_VARIANTS = {  # type: ignore
     'default': ('payments.dummy.DummyProvider', {})}
 
 PAYMENT_HOST = getattr(settings, 'PAYMENT_HOST', None)
