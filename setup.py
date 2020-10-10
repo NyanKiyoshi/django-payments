@@ -83,6 +83,7 @@ setup(
         'Topic :: Software Development :: Libraries :: Application Frameworks',
         'Topic :: Software Development :: Libraries :: Python Modules'],
     install_requires=REQUIREMENTS,
+    extras_require={"mercadopago": ["mercadopago<1.0.0"]},
     cmdclass={
         'test': PyTest},
     tests_require=[
